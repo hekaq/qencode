@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'Basis Grotesque Pro';
+  src: local('Basis Grotesque Pro Regular'), local('Basis-Grotesque-Pro-Regular'),
+      url('./assets/fonts/BasisGrotesquePro-Regular/BasisGrotesquePro-Regular.woff2') format('woff2'),
+      url('./assets/fonts/BasisGrotesquePro-Regular/BasisGrotesquePro-Regular.woff') format('woff'),
+      url('./assets/fonts/BasisGrotesquePro-Regular/BasisGrotesquePro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Basis Grotesque Pro';
+  src: local('Basis Grotesque Pro Medium'), local('Basis-Grotesque-Pro-Medium'),
+  url('./assets/fonts/BasisGrotesquePro-Medium/BasisGrotesquePro-Medium.woff2') format('woff2'),
+  url('./assets/fonts/BasisGrotesquePro-Medium/BasisGrotesquePro-Medium.woff') format('woff'),
+  url('./assets/fonts/BasisGrotesquePro-Medium/BasisGrotesquePro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Basis Grotesque Pro';
+  src: local('Basis Grotesque Pro Bold'), local('Basis-Grotesque-Pro-Bold'),
+      url('./assets/fonts/BasisGrotesquePro-Bold/BasisGrotesquePro-Bold.woff2') format('woff2'),
+      url('./assets/fonts/BasisGrotesquePro-Bold/BasisGrotesquePro-Bold.woff') format('woff'),
+      url('./assets/fonts/BasisGrotesquePro-Bold/BasisGrotesquePro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+body {
+  font-family: 'Basis Grotesque Pro', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 400px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.mainHeader {
+  font-size: 30px;
+  line-height: 38.73px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+
+  border: 1.2px solid #d3d8dc;
+  border-radius: 6px;
+  
+  font-size: 15px;
+  line-height: 20px;
+  
+  padding: 0 12px;
+}
+
+.input::placeholder {
+  color: #A1ABB5;
+}
+
+.button {
+  width: 100%;
+  height: 48px;
+
+  background-color: #316fea;
+    
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #ffffff;
+
+  border: 0;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-icon {
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background-color: transparent;
+  background-image: url('./assets/icons/eye.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer;
+}
+
+.error-message {
+  color: #e13b3b;
+  font-size: 15px;
+  margin-top: 6px;
+}
